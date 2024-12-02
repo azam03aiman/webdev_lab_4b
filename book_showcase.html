@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Showcase</title>
+    </head>
+    <body>
+        <script>
+            const bookData = 
+            {
+                "Book":
+                [
+                    {
+                        "title": "The Great Gatsby",
+                        "author": "F. Scott Fitzgerald",
+                        "publicationYear": "1925",
+                        "genre": ["Fiction", "Classics"]
+                    },
+                    {
+                        "title": "To Kill a Mockingbird",
+                        "author": "Harper Lee",
+                        "publicationYear": "1960",
+                        "genre": ["Fiction", "Coming-of-Age"]
+                    }
+                ]
+            }
+
+
+            bookData.Book.forEach(book => {
+                console.log(book.title);
+                console.log(book.author);
+                console.log(book.publicationYear);
+                console.log(book.genre);
+            })
+        </script>
+    </body>
+</html>
